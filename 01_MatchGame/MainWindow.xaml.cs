@@ -15,15 +15,33 @@ using System.Windows.Shapes;
 
 namespace _01_MatchGame
 {
+    using System.Windows.Threading;
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
+        DispatcherTimer timer = new DispatcherTimer();
+        int tenthOfSecondsElapsed;
+        int matchsFound;
         public MainWindow()
         {
             InitializeComponent();
+
+            timer.Interval = TimeSpan.FromSeconds(.1);
+            timer.Tick += Timer_Tick;
             SetUpGame();
+        }
+
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            tenthOfSecondsElapsed++;
+            TimeTextBlock.Text = (tenthOfSecondsElapsed / 10F).ToString("0.0s");
+            if (matchsFound ==  8)
+            {
+                timer.Stop();
+                TimeTextBlock.Text = TimeTextBlock.Text + " -  Play again?";
+            }
         }
 
         private void SetUpGame()
@@ -42,11 +60,17 @@ namespace _01_MatchGame
             Random random = new Random();
             foreach (TextBlock textBlock in mainGrid.Children.OfType<TextBlock>())
             {
-                textBlock.Visibility = Visibility.Visible;
-                int index  = random.Next(aninmalEomji.Count);
-                string nextemoji = aninmalEomji[index];
-                textBlock.Text = nextemoji;
-                aninmalEomji.RemoveAt(index);
+                if (textBlock.Name != "TimeTextBlock") 
+                {
+                    textBlock.Visibility = Visibility.Visible;
+                    int index = random.Next(aninmalEomji.Count);
+                    string nextemoji = aninmalEomji[index];
+                    textBlock.Text = nextemoji;
+                    aninmalEomji.RemoveAt(index);
+                }
+                timer.Start();
+                tenthOfSecondsElapsed = 0;
+                matchsFound = 0;
             }
         }
 
@@ -63,6 +87,12 @@ namespace _01_MatchGame
                 lastTextBlockClicked = textBlock; //클릭한 동물 임시 저장
                 findingMatch = true;  //매칭  성공  상태로 변환
             }
+            else if (textBlock.Text == lastTextBlockClicked.Text)
+            {
+                matchsFound++;
+                textBlock.Visibility = Visibility.Hidden;
+                findingMatch = false;
+            }
             else if (textBlock.Text == lastTextBlockClicked.Text) //짝을 맞춘 경우
             {
                 textBlock.Visibility = Visibility.Hidden; //클릭한  동물 가리기
@@ -72,6 +102,14 @@ namespace _01_MatchGame
             {
                 lastTextBlockClicked.Visibility = Visibility.Visible;  //클릭한 동물  보이도록 설정
                 findingMatch = false; //매칭 실패 상태로 변환
+            }
+        }
+
+        private void TimeTextBlock_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (matchsFound == 8)
+            {
+                SetUpGame();
             }
         }
     }
