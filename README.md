@@ -1,4 +1,4 @@
-¼­Àû :  HeadFirst C# 4ÆÇ  
+ì„œì  :  HeadFirst C# 4íŒ  
 IDE : Microsoft Visual Studio Community 2022  
-¾ğ¾î : C# 9.0    
-ÇÁ·¹ÀÓ¿öÅ©  : NET Core 3.1  
+ì–¸ì–´ : C# 9.0    
+í”„ë ˆì„ì›Œí¬  : NET Core 3.1  
