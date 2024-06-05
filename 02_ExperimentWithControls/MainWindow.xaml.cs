@@ -44,5 +44,37 @@ namespace _02_ExperimentWithControls
         {
             number.Text = bigSlider.Value.ToString("000-000-0000");
         }
+
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            if (sender is RadioButton radioButton)
+            {
+                number.Text = radioButton.Content.ToString();
+            }
+        }
+
+        private void myListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (myListBox.SelectedItems is ListBoxItem listBoxItem)
+            {
+                number.Text = listBoxItem.Content.ToString();
+            }
+        }
+
+        private void readOnlyComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (readOnlyComboBox.SelectedItem is ListBoxItem  listBoxItem)
+            {
+                number.Text = listBoxItem.Content.ToString();
+            }
+        }
+
+        private void editableComboBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (sender is ComboBox comboBox)
+            {
+                number.Text = comboBox.Text;
+            }
+        }
     }
 }
