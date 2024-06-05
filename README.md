@@ -5,3 +5,6 @@ IDE : Microsoft Visual Studio Community 2022
 
 ### 1. 이모지 매칭 게임
 ![1](https://github.com/doomout/Head_First_CSharp/assets/13861731/2e4ef34a-977f-458f-881e-4155bdb210c4)
+
+### 2. wpf 예제
+![2](https://github.com/doomout/Head_First_CSharp/assets/13861731/4a445c3b-b880-4e78-9658-89987945d1e9)
