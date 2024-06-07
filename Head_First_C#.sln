@@ -12,7 +12,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "솔루션 항목", "솔루�
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_Class_Code", "02_Class_Code\02_Class_Code.csproj", "{D1B240A2-8967-4F20-8DDD-97A19EB83827}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_ExperimentWithControls", "02_ExperimentWithControls\02_ExperimentWithControls.csproj", "{C2BAA5F4-ECC3-4A29-99F5-2C87B0A69317}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_ExperimentWithControls", "02_ExperimentWithControls\02_ExperimentWithControls.csproj", "{C2BAA5F4-ECC3-4A29-99F5-2C87B0A69317}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_PickRandomCards", "03_PickRandomCards\03_PickRandomCards.csproj", "{94E19BE0-3D4B-4FCD-A674-FEF6D3BA3763}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +34,10 @@ Global
 		{C2BAA5F4-ECC3-4A29-99F5-2C87B0A69317}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2BAA5F4-ECC3-4A29-99F5-2C87B0A69317}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2BAA5F4-ECC3-4A29-99F5-2C87B0A69317}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94E19BE0-3D4B-4FCD-A674-FEF6D3BA3763}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94E19BE0-3D4B-4FCD-A674-FEF6D3BA3763}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94E19BE0-3D4B-4FCD-A674-FEF6D3BA3763}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94E19BE0-3D4B-4FCD-A674-FEF6D3BA3763}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
