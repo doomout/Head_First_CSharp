@@ -16,7 +16,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_ExperimentWithControls",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_PickRandomCards", "03_PickRandomCards\03_PickRandomCards.csproj", "{94E19BE0-3D4B-4FCD-A674-FEF6D3BA3763}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_PickACardUI", "03_PickACardUI\03_PickACardUI.csproj", "{094F4EC5-CC23-4866-B511-F175F01DE620}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_PickACardUI", "03_PickACardUI\03_PickACardUI.csproj", "{094F4EC5-CC23-4866-B511-F175F01DE620}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_personal_transaction", "03_personal_transaction\03_personal_transaction.csproj", "{380BA40F-293D-4FA2-AFCE-F719F089E660}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,6 +46,10 @@ Global
 		{094F4EC5-CC23-4866-B511-F175F01DE620}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{094F4EC5-CC23-4866-B511-F175F01DE620}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{094F4EC5-CC23-4866-B511-F175F01DE620}.Release|Any CPU.Build.0 = Release|Any CPU
+		{380BA40F-293D-4FA2-AFCE-F719F089E660}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{380BA40F-293D-4FA2-AFCE-F719F089E660}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{380BA40F-293D-4FA2-AFCE-F719F089E660}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{380BA40F-293D-4FA2-AFCE-F719F089E660}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

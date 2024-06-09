@@ -6,6 +6,7 @@ namespace _03_PickACardUI
 {
     internal class CardPicker
     {
+        //sttatic 필드는 1개의 사본만 존재하고 모든 인스턴스가 공유한다.
         static Random random = new Random();
         public static string[] PickSomeCards(int numberOfCards)
         {
