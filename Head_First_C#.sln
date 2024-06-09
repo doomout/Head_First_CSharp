@@ -20,6 +20,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_PickACardUI", "03_PickAC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_personal_transaction", "03_personal_transaction\03_personal_transaction.csproj", "{380BA40F-293D-4FA2-AFCE-F719F089E660}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_Betting", "03_Betting\03_Betting.csproj", "{49B03B02-9675-4D93-84D2-1CD09ED2B31A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +52,10 @@ Global
 		{380BA40F-293D-4FA2-AFCE-F719F089E660}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{380BA40F-293D-4FA2-AFCE-F719F089E660}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{380BA40F-293D-4FA2-AFCE-F719F089E660}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49B03B02-9675-4D93-84D2-1CD09ED2B31A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49B03B02-9675-4D93-84D2-1CD09ED2B31A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49B03B02-9675-4D93-84D2-1CD09ED2B31A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49B03B02-9675-4D93-84D2-1CD09ED2B31A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
