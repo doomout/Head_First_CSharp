@@ -22,7 +22,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_personal_transaction", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_Betting", "03_Betting\03_Betting.csproj", "{49B03B02-9675-4D93-84D2-1CD09ED2B31A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_Pizza", "03_Pizza\03_Pizza.csproj", "{06D7D3CE-2EA5-46EF-B4BC-806F3B05D830}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_Pizza", "03_Pizza\03_Pizza.csproj", "{06D7D3CE-2EA5-46EF-B4BC-806F3B05D830}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_AbilityScore", "04_AbilityScore\04_AbilityScore.csproj", "{84D5EF16-7242-464D-AD6A-BFA308D02AA8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -62,6 +64,10 @@ Global
 		{06D7D3CE-2EA5-46EF-B4BC-806F3B05D830}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06D7D3CE-2EA5-46EF-B4BC-806F3B05D830}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06D7D3CE-2EA5-46EF-B4BC-806F3B05D830}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84D5EF16-7242-464D-AD6A-BFA308D02AA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84D5EF16-7242-464D-AD6A-BFA308D02AA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84D5EF16-7242-464D-AD6A-BFA308D02AA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84D5EF16-7242-464D-AD6A-BFA308D02AA8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
