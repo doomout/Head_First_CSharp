@@ -18,7 +18,7 @@ namespace _04_SharpenYourPencil
         {
             Console.WriteLine(Name + " Heard a message");
             Console.WriteLine(whoSaidIt.Name + " side this: " +  message);
-        }
+         }
         public void SpeakTo(Elephant whoToTalkTo, string message)
         {
             whoToTalkTo.HearMessage(message, this);
