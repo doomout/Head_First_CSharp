@@ -4,15 +4,24 @@ using System.Text;
 
 namespace _04_SharpenYourPencil
 {
-    internal class Elrphant
+    internal class Elephant
     {
         public int EarSzie;
-        public string name;
+        public string Name;
 
         public void WhoAmI()
         {
-            Console.WriteLine("내 이름은 " + name + "이야.");
-            Console.WriteLine("내 귀 사이즈는 " + EarSzie + "이야.");
+            Console.WriteLine("My name is " + Name + ".");
+            Console.WriteLine("My ears are " + EarSzie + " inches tall.");
+        }
+        public void HearMessage(string message, Elephant whoSaidIt)
+        {
+            Console.WriteLine(Name + " Heard a message");
+            Console.WriteLine(whoSaidIt.Name + " side this: " +  message);
+        }
+        public void SpeakTo(Elephant whoToTalkTo, string message)
+        {
+            whoToTalkTo.HearMessage(message, this);
         }
     }
 }
