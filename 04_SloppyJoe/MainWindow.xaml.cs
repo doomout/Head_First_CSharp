@@ -40,7 +40,7 @@ namespace _04_SloppyJoe
                         "plain bagel", "onion bagel", "pumpernickel bagel", "everything bagel"
                     };
                 }
-                menuItems[i].Generate();
+                menuItems[i].Generate(); //필드값이 비어 있어서 화면에 출력할 수가 없기에 호출해야 보인다.
             }
 
             item1.Text = menuItems[0].Description;

@@ -8,7 +8,8 @@ namespace _04_SloppyJoe
 {
     class MenuItem
     {
-        public Random Randomizer = new Random(12345);
+        //public Random Randomizer = new Random(12345); //초기 값이 동일해서 계속 같은 값을 생성한다.
+        public static Random Randomizer = new Random(); //정적 필드로 만들어서 하나의 인스턴스를 공유하도록 수정했다.
         public string[] Proteins = { "Roast beef", "Salami", "Turkey", "Ham", "Pastrami", "Tofu" };
         public string[] Condiments = { "yellow mustard", "brown mustard", "honey mustard", "mayo", "relish", "french dressing" };
         public string[] Breads = { "rye", "white", "wheat", "pupernickel", "a roll" };
