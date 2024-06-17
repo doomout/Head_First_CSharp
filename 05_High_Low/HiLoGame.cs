@@ -15,7 +15,7 @@ namespace _05_High_Low
 
         public static int GetPot() { return pot; }
         
-        private static void Guess(bool higher) //판 돈과 임의 수와 비교해서 큰가? 작은가?
+        public static void Guess(bool higher) //판 돈과 임의 수와 비교해서 큰가? 작은가?
         {
             int nextNumber = random.Next(1, MAXIMUM + 1);
             if ((higher && nextNumber >= currentNumber) || (!higher && nextNumber <= currentNumber))
