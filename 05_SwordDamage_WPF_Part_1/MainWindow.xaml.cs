@@ -18,21 +18,18 @@ namespace _05_SwordDamage_WPF_Part_1
     public partial class MainWindow : Window
     {
         Random random = new Random();
-        SwordDamage sd = new SwordDamage();
+        SwordDamage sd;
 
         public MainWindow()
         {
             InitializeComponent();
-            sd.SetMagic(false);
-            sd.SetFlaming(false);
-            RollDice();
+            sd = new SwordDamage(random.Next(1, 7) + random.Next(1, 7) + random.Next(1, 7));
+            DisplayDamage();
         }
 
         private void RollDice()
         {
             sd.Roll = random.Next(1, 7) + random.Next(1, 7) + random.Next(1, 7);
-            sd.SetFlaming(Flaming.IsChecked.Value);
-            sd.SetMagic(Magic.IsChecked.Value);
             DisplayDamage();
         }
         
@@ -43,25 +40,25 @@ namespace _05_SwordDamage_WPF_Part_1
 
         private void Flaming_Checked(object sender, RoutedEventArgs e)
         {
-            sd.SetFlaming(true);
+            sd.Flaming = true;
             DisplayDamage();
         }
 
         private void Flaming_Unchecked(object sender, RoutedEventArgs e)
         {
-            sd.SetFlaming(false);
+            sd.Flaming = false;
             DisplayDamage();
         }
 
         private void Magic_Checked(object sender, RoutedEventArgs e)
         {
-            sd.SetMagic(true);
+            sd.Magic = true;
             DisplayDamage();
         }
 
         private void Magic_Unchecked(object sender, RoutedEventArgs e)
         {
-            sd.SetMagic(false);
+            sd.Magic = false;
             DisplayDamage();
         }
 

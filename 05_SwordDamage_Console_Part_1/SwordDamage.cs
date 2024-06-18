@@ -9,7 +9,7 @@ namespace _05_SwordDamage_Console_Part_1
     internal class SwordDamage
     {
         private const int BASE_DAMAGE = 3;
-       private const int FLAME_DAMAGE = 2;
+        private const int FLAME_DAMAGE = 2;
 
         /// <summary>
         /// 생성자는 기본 Magic, Flaming 값과 주사위 3개를 굴려서 나온 값을 기준으로 데미지를 계산
