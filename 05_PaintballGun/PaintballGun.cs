@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net.Http.Headers;
 using System.Text;
 
 namespace _05_PaintballGun
@@ -9,7 +10,16 @@ namespace _05_PaintballGun
     /// </summary>
     internal class PaintballGun
     {
-        public const int MAGAZINE_SIZE = 16; 
+        //PaintballGun의 생성자로 초기화 하기
+        public PaintballGun(int balls, int magazineSize, bool loaded) 
+        {
+            this.balls = balls;
+            MagazineSize = magazineSize;
+            if(!loaded ) Reload();
+        }
+        //public const int MAGAZINE_SIZE = 16; //기존코드
+        //기존 코드를 속성으로 변경(읽기 전용)
+        public int MagazineSize { get; private set; }
 
         private int balls = 0;
         public int BallsLoaded { get; private set; } //자동 구현 속성(prop + 탭 2번) 읽기 전용
@@ -42,11 +52,10 @@ namespace _05_PaintballGun
             }
         }
 
-
         public void Reload() 
         {
-            if (balls > MAGAZINE_SIZE) //탄창 최고치보다 많다면.
-                BallsLoaded = MAGAZINE_SIZE; //최고치로 장전
+            if (balls > MagazineSize) //탄창 최고치보다 많다면.
+                BallsLoaded = MagazineSize; //최고치로 장전
             else //탄창 최고치 보다 적다면.
                 BallsLoaded = balls; //가지고 있는 볼만큼만 장전
         }
@@ -58,7 +67,5 @@ namespace _05_PaintballGun
             balls--;
             return true;
         }
-
-
     }
 }
