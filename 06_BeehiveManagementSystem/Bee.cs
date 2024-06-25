@@ -4,7 +4,7 @@ using System.Text;
 
 namespace _06_BeehiveManagementSystem
 {
-    class Bee
+    internal class Bee
     {
         //Bee 하위 클래스가 교대할 때 마다 소모되는 벌꿀의 양을 정의 
         public virtual float CostPerShift { get; }
