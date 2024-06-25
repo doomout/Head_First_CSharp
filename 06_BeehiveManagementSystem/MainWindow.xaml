@@ -16,17 +16,17 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Label Content="Job Assignments"  Margin="20,0" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+        <Label Content="직무 배정"  Margin="20,0" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
         <StackPanel Grid.Row="1" VerticalAlignment="Top" Margin="20">
             <ComboBox  x:Name="jobSelector"  Margin="0,0,0,20"  FontSize="18" SelectedIndex="0">
-                <ListBoxItem Content="Nectar Collector"/>
-                <ListBoxItem Content="Honey Manufacturer"/>
-                <ListBoxItem Content="Egg Care"/>
+                <ListBoxItem Content="꽃꿀 수집"/>
+                <ListBoxItem Content="꿀 제조"/>
+                <ListBoxItem Content="알 관리"/>
             </ComboBox>
-            <Button Content="Assign this job to a bee" FontSize="18px" Click="AssignJob_Click" />
+            <Button Content="이 일을 벌에게 할당하세요." FontSize="18px" Click="AssignJob_Click" />
         </StackPanel>
-        <Button Content="Work the next shift" Margin="20" Grid.Row="2" FontSize="18px" Click="WorkShift_Click"/>
-        <Label Content="Queen's Report" Grid.Column="1" HorizontalAlignment="Center" Margin="20,0" VerticalAlignment="Bottom" FontSize="18"/>
+        <Button Content="다음 교대 근무" Margin="20" Grid.Row="2" FontSize="18px" Click="WorkShift_Click"/>
+        <Label Content="여왕벌의 보고서" Grid.Column="1" HorizontalAlignment="Center" Margin="20,0" VerticalAlignment="Bottom" FontSize="18"/>
         <TextBox x:Name="statusReport" IsReadOnly="True" Grid.Column="1" Margin="20" Grid.Row="1"   Grid.RowSpan="2"/>
     </Grid>
 </Window>

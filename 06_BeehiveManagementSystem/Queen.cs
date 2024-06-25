@@ -17,9 +17,9 @@ namespace _06_BeehiveManagementSystem
 
         public Queen() : base("Queen")
         {
-            AssignBee("Nectar Collector");
-            AssignBee("Honey Manufacturer");
-            AssignBee("Egg Care");
+            AssignBee("꽃꿀 수집");
+            AssignBee("꿀 제조");
+            AssignBee("알 관리");
         }
 
         private void AddWorker(Bee worker)
@@ -34,10 +34,10 @@ namespace _06_BeehiveManagementSystem
 
         private void UpdateStatusReport()
         {
-            StatusReport = $"Vault report : \n{HoneyVault.StatusReport}\n" +
-                $"\nEgg count: {eggs:0.0}\nUnassigned workers: {unassignedWorkers:0.0}\n" +
-                $"{WorkerStatus("Nectar Collector")}\n{WorkerStatus("Honey Manufacturer")}" +
-                $"\n{WorkerStatus("Egg Care")}\nTOTAL WORKERS: {workers.Length}";
+            StatusReport = $"보고서 : \n{HoneyVault.StatusReport}\n" +
+                $"\n알 갯수: {eggs:0.0}\n할당되지 않은 작업자: {unassignedWorkers:0.0}\n" +
+                $"{WorkerStatus("꽃꿀 수집")}\n{WorkerStatus("꿀 제조")}" +
+                $"\n{WorkerStatus("알 관리")}\n총 일벌 수: {workers.Length}";
         }
 
         public void CareForEggs(float eggsToConvert)
@@ -61,20 +61,20 @@ namespace _06_BeehiveManagementSystem
             if (count == 1) 
                 s = "";
 
-            return $"{count} {job} bee{s}";
+            return $"{count} {job} {s}";
         }
 
         public void AssignBee(string job)
         {
             switch (job)
             {
-                case "Nectar Collector":
+                case "꽃꿀 수집":
                     AddWorker(new NectarCollector());
                     break;
-                case "Honey Manufacturer":
+                case "꿀 제조":
                     AddWorker(new HoneyManufacturer());
                     break;
-                case "Egg Care":
+                case "알 관리":
                     AddWorker(new EggCare(this));
                     break;
             }

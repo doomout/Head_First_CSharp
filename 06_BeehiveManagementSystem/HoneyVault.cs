@@ -46,15 +46,15 @@ namespace _06_BeehiveManagementSystem
         {
             get
             {
-                string status = $"{honey:0.0} units of honey\n" + $"{nectar:0.0} units of nectar";
+                string status = $"꿀의 양: {honey:0.0} \n" + $"꽃꿀의 양: {nectar:0.0} ";
                 string warnings = "";
                 //벌꿀량이 최소 양보다 줄어들면 경고
                 if (honey < LOW_LEVEL_WARNING) 
-                    warnings += "\nLOW HONEY = ADD A HONEY MANUFACTURER";
+                    warnings += "\n꿀 부족 - 꿀 제조 추가";
 
                 //꽃꿀이 최소 양보다 줄어들면 경고
                 if (nectar < LOW_LEVEL_WARNING) 
-                    warnings += "\nLOW NECTAR - ADD A NECTAR COLLECTOR";
+                    warnings += "\n꽃꿀 부족 - 꽃꿀 수집 추가";
                 return status + warnings;
             }
         }

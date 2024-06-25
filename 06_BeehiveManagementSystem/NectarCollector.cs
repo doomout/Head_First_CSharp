@@ -9,7 +9,7 @@ namespace _06_BeehiveManagementSystem
     {
         public const float NECTAR_COLLECTED_PER_SHIFT = 33.25f;
         public override float CostPerShift { get { return 1.95f; } }
-        public NectarCollector() : base("Nectar Collector") { }
+        public NectarCollector() : base("꽃꿀 수집") { }
 
         protected override void DoJob()
         {

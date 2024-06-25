@@ -9,7 +9,7 @@ namespace _06_BeehiveManagementSystem
         public const float CARE_PROGRESS_PER_SHIFT = 0.15f;
         public override float CostPerShift { get { return 1.35f; } }
         private Queen queen;
-        public EggCare(Queen queen) : base("Egg Care")
+        public EggCare(Queen queen) : base("알 관리")
         {
             this.queen = queen;
         }
