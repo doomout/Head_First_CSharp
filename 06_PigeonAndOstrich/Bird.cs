@@ -4,7 +4,7 @@ using System.Text;
 
 namespace _06_PigeonAndOstrich
 {
-    internal class Bird
+    abstract class Bird
     {
         public static Random Randomizer = new Random();
 
