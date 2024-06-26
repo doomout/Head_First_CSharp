@@ -5,7 +5,7 @@ using System.Text;
 
 namespace _05_SwordDamage_WPF_Part_1
 {
-    class SwordDamage
+    internal  class SwordDamage
     {
         private const int BASE_DAMAGE = 3;
         private const int FLAME_DAMAGE = 2;
