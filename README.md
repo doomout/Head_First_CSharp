@@ -8,3 +8,6 @@ IDE : Microsoft Visual Studio Community 2022
 
 ### 2. wpf 예제
 ![2](https://github.com/doomout/Head_First_CSharp/assets/13861731/4a445c3b-b880-4e78-9658-89987945d1e9)
+
+### 3. 꿀벌 관리 시스템
+![1](https://github.com/doomout/Head_First_CSharp/assets/13861731/563a9b39-fc83-4d0d-a8dd-6da4a2d9f96b)
