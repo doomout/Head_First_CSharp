@@ -48,7 +48,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06_VendingMachine", "06_Ven
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06_JewelThief", "06_JewelThief\06_JewelThief.csproj", "{650A5930-939D-469D-B87E-A2982F4ABADB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_BeehiveManagementSystem", "06_BeehiveManagementSystem\06_BeehiveManagementSystem.csproj", "{A5A1F168-4B92-427E-B165-7584D89400E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06_BeehiveManagementSystem", "06_BeehiveManagementSystem\06_BeehiveManagementSystem.csproj", "{A5A1F168-4B92-427E-B165-7584D89400E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_Clowns", "07_Clowns\07_Clowns.csproj", "{0ADEBAF8-B61E-4144-AC3B-FD49A8EAEA1C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -140,6 +142,10 @@ Global
 		{A5A1F168-4B92-427E-B165-7584D89400E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5A1F168-4B92-427E-B165-7584D89400E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5A1F168-4B92-427E-B165-7584D89400E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0ADEBAF8-B61E-4144-AC3B-FD49A8EAEA1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ADEBAF8-B61E-4144-AC3B-FD49A8EAEA1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ADEBAF8-B61E-4144-AC3B-FD49A8EAEA1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ADEBAF8-B61E-4144-AC3B-FD49A8EAEA1C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
