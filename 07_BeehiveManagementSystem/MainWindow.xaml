@@ -1,0 +1,32 @@
+﻿<Window x:Class="_07_BeehiveManagementSystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_07_BeehiveManagementSystem"
+        mc:Ignorable="d"
+        Title="Beehive Management System" Height="325" Width="625">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Content="직무 배정"  Margin="20,0" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+        <StackPanel Grid.Row="1" VerticalAlignment="Top" Margin="20">
+            <ComboBox  x:Name="jobSelector"  Margin="0,0,0,20"  FontSize="18" SelectedIndex="0">
+                <ListBoxItem Content="꽃꿀 수집"/>
+                <ListBoxItem Content="꿀 제조"/>
+                <ListBoxItem Content="알 관리"/>
+            </ComboBox>
+            <Button Content="이 일을 벌에게 할당하세요." FontSize="18px" Click="AssignJob_Click" />
+        </StackPanel>
+        <Button Content="다음 교대 근무" Margin="20" Grid.Row="2" FontSize="18px" Click="WorkShift_Click"/>
+        <Label Content="여왕벌의 보고서" Grid.Column="1" HorizontalAlignment="Center" Margin="20,0" VerticalAlignment="Bottom" FontSize="18"/>
+        <TextBox x:Name="statusReport" IsReadOnly="True" Grid.Column="1" Margin="20" Grid.Row="1"   Grid.RowSpan="2"/>
+    </Grid>
+</Window>
