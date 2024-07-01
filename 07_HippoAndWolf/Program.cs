@@ -18,12 +18,12 @@ namespace _07_HippoAndWolf
                 animal.MakeNois(); // 각 동물이 소리를 내는 메서드 호출
 
                 // 객체가 Hippo 타입인지 확인 후, 맞다면 Swim 메서드 호출
-                if (animal is Hippo hippo)
-                    hippo.Swim();
+                if (animal is ISwimmer swimmer) //is 키워드로 인터페이스 구현 검사
+                    swimmer.Swim();
 
                 // 객체가 Wolf 타입인지 확인 후, 맞다면 HuntInPack 메서드 호출
-                if (animal is Wolf wolf)
-                    wolf.HuntInPack();
+                if (animal is IPackHunter hunter) //is 키워드로 인터페이스 구현 검사
+                    hunter.HuntInPack();
 
                 // 출력 결과 구분을 위한 빈 줄 추가
                 Console.WriteLine();

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace _07_HippoAndWolf
 {
-    internal class Wolf : Canine
+    internal class Wolf : Canine, IPackHunter
     {
         public Wolf(bool belongsToPack) 
         {
