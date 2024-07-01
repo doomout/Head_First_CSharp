@@ -54,7 +54,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07_Clowns", "07_Clowns\07_C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07_BeehiveManagementSystem", "07_BeehiveManagementSystem\07_BeehiveManagementSystem.csproj", "{D64DC2F7-FBFE-45CA-AA29-38B1BBB13D25}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_Puzzle", "07_Puzzle\07_Puzzle.csproj", "{31CAFBFD-0FD2-4CB5-9F8E-0466AF58BDAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07_Puzzle", "07_Puzzle\07_Puzzle.csproj", "{31CAFBFD-0FD2-4CB5-9F8E-0466AF58BDAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_HippoAndWolf", "07_HippoAndWolf\07_HippoAndWolf.csproj", "{DCFA7815-D16C-46F1-A4E2-5F7C898469E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -158,6 +160,10 @@ Global
 		{31CAFBFD-0FD2-4CB5-9F8E-0466AF58BDAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31CAFBFD-0FD2-4CB5-9F8E-0466AF58BDAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31CAFBFD-0FD2-4CB5-9F8E-0466AF58BDAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCFA7815-D16C-46F1-A4E2-5F7C898469E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCFA7815-D16C-46F1-A4E2-5F7C898469E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCFA7815-D16C-46F1-A4E2-5F7C898469E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCFA7815-D16C-46F1-A4E2-5F7C898469E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
