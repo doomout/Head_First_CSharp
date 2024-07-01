@@ -3,11 +3,12 @@
 namespace _07_BeehiveManagementSystem
 {
     internal class Queen : Bee
-    {
+    { 
         public const float EGGS_PER_SHIFT = 0.45f;
         public const float HONEY_PER_UNASSIGNED_WORKER = 0.5f;
 
-        private Bee[] workers = new Bee[0];
+        //private Bee[] workers = new Bee[0];
+        private IWorker[] workers = new IWorker[0]; //인터페이스 적용
         private float eggs = 0;
         private float unassignedWorkers = 3;
         public string StatusReport { get; private set; }
@@ -20,7 +21,7 @@ namespace _07_BeehiveManagementSystem
             AssignBee("알 관리");
         }
 
-        private void AddWorker(Bee worker)
+        private void AddWorker(IWorker worker) //인터페이스 적용
         {
             if(unassignedWorkers >= 1)
             {
@@ -50,7 +51,7 @@ namespace _07_BeehiveManagementSystem
         private string WorkerStatus(string job)
         {
             int count = 0;
-            foreach (Bee worker in workers)
+            foreach (IWorker worker in workers) //인터페이스 적용
             {
                 if (worker.Job == job)
                     count++;
