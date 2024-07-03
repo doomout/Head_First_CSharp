@@ -15,8 +15,6 @@ namespace _07_ScaryClown
         public string ScaryThingIHave { get { return $"{scaryThingCount} spiders"; } }
         public void ScareLittleChildren()
         {
-            if (fingersTheClown is IScaryClown iScaryClownReference)
-                iScaryClownReference.ScaraLittleChildren();
             Console.WriteLine($"Boo! Gotcha! Look at my {ScaryThingIHave}!");
         }
         

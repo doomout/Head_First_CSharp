@@ -7,6 +7,6 @@ namespace _07_ScaryClown
     internal interface IScaryClown : IClown
     {
         string ScaryThingIHave { get; }
-        void ScaraLittleChildren();
+        void ScareLittleChildren();
     }
 }

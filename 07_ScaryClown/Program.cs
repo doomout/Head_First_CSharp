@@ -6,10 +6,12 @@ namespace _07_ScaryClown
     {
         static void Main(string[] args)
         {
-            ICown fingersTheClown = new ScaryScary("big red nose", 14);
+            IClown fingersTheClown = new ScaryScary("big red nose", 14);
             fingersTheClown.Honk();
-            IScaryClown iScaryClownReference = fingersTheClown;
-            iScaryClownReference.ScareLittleChildren();
+            if(fingersTheClown is IScaryClown iScaryClownReference)
+            {
+                iScaryClownReference.ScareLittleChildren();
+            }
         }
     }
 }
