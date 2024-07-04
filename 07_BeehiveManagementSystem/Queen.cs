@@ -1,8 +1,9 @@
 ﻿using System;
+using System.ComponentModel;
 
 namespace _07_BeehiveManagementSystem
 {
-    internal class Queen : Bee
+    internal class Queen : Bee, INotifyPropertyChanged
     { 
         public const float EGGS_PER_SHIFT = 0.45f;
         public const float HONEY_PER_UNASSIGNED_WORKER = 0.5f;
@@ -11,6 +12,9 @@ namespace _07_BeehiveManagementSystem
         private IWorker[] workers = new IWorker[0]; //인터페이스 적용
         private float eggs = 0;
         private float unassignedWorkers = 3;
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
         public string StatusReport { get; private set; }
         public override float CostPerShift { get { return 2.15f; } }
 
@@ -37,6 +41,8 @@ namespace _07_BeehiveManagementSystem
                 $"\n알 갯수: {eggs:0.0}\n할당되지 않은 작업자: {unassignedWorkers:0.0}\n" +
                 $"{WorkerStatus("꽃꿀 수집")}\n{WorkerStatus("꿀 제조")}" +
                 $"\n{WorkerStatus("알 관리")}\n총 일벌 수: {workers.Length}";
+            
+            OnPropertyChanged("StatusReport");
         }
 
         public void CareForEggs(float eggsToConvert)
@@ -89,6 +95,11 @@ namespace _07_BeehiveManagementSystem
             }
             HoneyVault.ConsumeHoney(unassignedWorkers * HONEY_PER_UNASSIGNED_WORKER);
             UpdateStatusReport();
+        }
+
+        protected void OnPropertyChanged(string name)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }
     }
 }
