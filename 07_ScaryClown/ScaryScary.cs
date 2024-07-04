@@ -6,7 +6,7 @@ namespace _07_ScaryClown
 {
     internal class ScaryScary : FunnyFunny, IScaryClown
     {
-        private int scaryThingCount;
+        private readonly int scaryThingCount; //읽기 전용으로 수정
         public ScaryScary(string funnyThing, int scaryThingCount) : base(funnyThing)
         {
            

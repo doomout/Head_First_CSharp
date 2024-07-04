@@ -12,6 +12,8 @@ namespace _07_ScaryClown
             {
                 iScaryClownReference.ScareLittleChildren();
             }
+            IClown.CarCapacity = 18;
+            Console.WriteLine(IClown.ClownCarDescription());
         }
     }
 }
