@@ -10,7 +10,8 @@ namespace _07_ScaryClown
             fingersTheClown.Honk();
             if(fingersTheClown is IScaryClown iScaryClownReference)
             {
-                iScaryClownReference.ScareLittleChildren();
+                //iScaryClownReference.ScareLittleChildren();
+                iScaryClownReference.ScareAdults(); //기본 구현 호출
             }
             IClown.CarCapacity = 18;
             Console.WriteLine(IClown.ClownCarDescription());
