@@ -20,7 +20,7 @@ namespace _07_BeehiveManagementSystem
         }
 
         private void Timer_Tick(object sender, EventArgs e)
-        {
+        { 
             WorkShift_Click(this, new RoutedEventArgs());
         }
 
