@@ -16,7 +16,22 @@ namespace _08_Ducks
                 new Duck() { Kind = KindOfDuck.Mallard, Size = 14},
                 new Duck() { Kind = KindOfDuck.Loon, Size = 13},
             };
-            ducks.Sort();
+            //CompareTo 사용한 정렬
+            ducks.Sort(); 
+            PrintDucks(ducks);
+
+            Console.WriteLine("--------------------------");
+
+            //Compare(Size x, Size y) 를 사용한 정렬(오리의 사이즈 순)
+            IComparer<Duck> sizeComparer = new DuckComparerBySize();
+            ducks.Sort(sizeComparer); 
+            PrintDucks(ducks);
+
+            Console.WriteLine("--------------------------");
+
+            //Compare(Kind x, Kind y) 를 사용한 정렬(오리의 종순)
+            IComparer<Duck> kindComparer = new DuckComparerByKind();
+            ducks.Sort(sizeComparer); 
             PrintDucks(ducks);
         }
 
