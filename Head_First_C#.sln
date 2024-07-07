@@ -60,9 +60,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07_HippoAndWolf", "07_Hippo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07_ScaryClown", "07_ScaryClown\07_ScaryClown.csproj", "{EA1E4D74-F600-46F0-B8F9-0A3FB7206821}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_JumbledCards", "08_JumbledCards\08_JumbledCards.csproj", "{C1C6EB08-AB78-46AC-993D-1912869157A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08_JumbledCards", "08_JumbledCards\08_JumbledCards.csproj", "{C1C6EB08-AB78-46AC-993D-1912869157A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_Shoes", "08_Shoes\08_Shoes.csproj", "{D5CB5C57-CBC8-4D3F-95FE-944394D0B589}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08_Shoes", "08_Shoes\08_Shoes.csproj", "{D5CB5C57-CBC8-4D3F-95FE-944394D0B589}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_Ducks", "08_Ducks\08_Ducks.csproj", "{3C588300-BE7D-427E-A589-2CE3D5178274}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -182,6 +184,10 @@ Global
 		{D5CB5C57-CBC8-4D3F-95FE-944394D0B589}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5CB5C57-CBC8-4D3F-95FE-944394D0B589}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5CB5C57-CBC8-4D3F-95FE-944394D0B589}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C588300-BE7D-427E-A589-2CE3D5178274}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C588300-BE7D-427E-A589-2CE3D5178274}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C588300-BE7D-427E-A589-2CE3D5178274}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C588300-BE7D-427E-A589-2CE3D5178274}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
