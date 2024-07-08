@@ -19,5 +19,10 @@ namespace _08_SuitsAndValues
         {
             get { return $"{Value} of {Suit}"; }
         }
+        //ToString()를 재정의
+        public override string ToString()
+        {
+            return Name;
+        }
     }
 }

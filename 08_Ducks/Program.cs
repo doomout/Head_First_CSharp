@@ -54,7 +54,10 @@ namespace _08_Ducks
         {
             foreach (Duck duck in ducks)
             {
-                Console.WriteLine($"{duck.Size} inch {duck.Kind}");
+                //기존 코드
+                //Console.WriteLine($"{duck.Size} inch {duck.Kind}"); 
+                //toString() 재정의한 코드
+                Console.WriteLine(duck);
             }
         }
     }

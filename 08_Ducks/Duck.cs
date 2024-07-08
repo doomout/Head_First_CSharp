@@ -18,5 +18,10 @@ namespace _08_Ducks
             else
                 return 0;
         }
+        //오리 정보 재정의(오리 정보 보임)
+        public override string ToString()
+        {
+            return $"A {Size} inch {Kind}";
+        }
     }
 }
