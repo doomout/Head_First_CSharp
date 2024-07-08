@@ -64,7 +64,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08_JumbledCards", "08_Jumbl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08_Shoes", "08_Shoes\08_Shoes.csproj", "{D5CB5C57-CBC8-4D3F-95FE-944394D0B589}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_Ducks", "08_Ducks\08_Ducks.csproj", "{3C588300-BE7D-427E-A589-2CE3D5178274}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08_Ducks", "08_Ducks\08_Ducks.csproj", "{3C588300-BE7D-427E-A589-2CE3D5178274}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_SuitsAndValues", "08_SuitsAndValues\08_SuitsAndValues.csproj", "{DE2BCEE0-4E85-439C-A9E2-478B1202F294}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -188,6 +190,10 @@ Global
 		{3C588300-BE7D-427E-A589-2CE3D5178274}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C588300-BE7D-427E-A589-2CE3D5178274}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C588300-BE7D-427E-A589-2CE3D5178274}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE2BCEE0-4E85-439C-A9E2-478B1202F294}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE2BCEE0-4E85-439C-A9E2-478B1202F294}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE2BCEE0-4E85-439C-A9E2-478B1202F294}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE2BCEE0-4E85-439C-A9E2-478B1202F294}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
