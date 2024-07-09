@@ -68,7 +68,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08_Ducks", "08_Ducks\08_Duc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08_SuitsAndValues", "08_SuitsAndValues\08_SuitsAndValues.csproj", "{DE2BCEE0-4E85-439C-A9E2-478B1202F294}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_Bird", "08_Bird\08_Bird.csproj", "{0C06D04D-7812-429F-8185-6A52DCEB0FCA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08_Bird", "08_Bird\08_Bird.csproj", "{0C06D04D-7812-429F-8185-6A52DCEB0FCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_BaseballPlayers", "08_BaseballPlayers\08_BaseballPlayers.csproj", "{0FD8F524-3FD4-4C09-88BF-61CD0F18ED32}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -200,6 +202,10 @@ Global
 		{0C06D04D-7812-429F-8185-6A52DCEB0FCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C06D04D-7812-429F-8185-6A52DCEB0FCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C06D04D-7812-429F-8185-6A52DCEB0FCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FD8F524-3FD4-4C09-88BF-61CD0F18ED32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FD8F524-3FD4-4C09-88BF-61CD0F18ED32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FD8F524-3FD4-4C09-88BF-61CD0F18ED32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FD8F524-3FD4-4C09-88BF-61CD0F18ED32}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
