@@ -11,3 +11,6 @@ IDE : Microsoft Visual Studio Community 2022
 
 ### 3. 꿀벌 관리 시스템
 ![1](https://github.com/doomout/Head_First_CSharp/assets/13861731/563a9b39-fc83-4d0d-a8dd-6da4a2d9f96b)
+
+### 4. 두 벌의 카드
+![1](https://github.com/doomout/Head_First_CSharp/assets/13861731/2d0dd44d-4023-4ff1-959d-7f7756bf11ba)
