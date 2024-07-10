@@ -70,7 +70,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08_SuitsAndValues", "08_Sui
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08_Bird", "08_Bird\08_Bird.csproj", "{0C06D04D-7812-429F-8185-6A52DCEB0FCA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_BaseballPlayers", "08_BaseballPlayers\08_BaseballPlayers.csproj", "{0FD8F524-3FD4-4C09-88BF-61CD0F18ED32}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08_BaseballPlayers", "08_BaseballPlayers\08_BaseballPlayers.csproj", "{0FD8F524-3FD4-4C09-88BF-61CD0F18ED32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_LumberjacksAndFlapjacks", "08_LumberjacksAndFlapjacks\08_LumberjacksAndFlapjacks.csproj", "{ECC530A8-B6F1-4B1F-B407-AC5B499657B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -206,6 +208,10 @@ Global
 		{0FD8F524-3FD4-4C09-88BF-61CD0F18ED32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FD8F524-3FD4-4C09-88BF-61CD0F18ED32}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FD8F524-3FD4-4C09-88BF-61CD0F18ED32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECC530A8-B6F1-4B1F-B407-AC5B499657B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECC530A8-B6F1-4B1F-B407-AC5B499657B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECC530A8-B6F1-4B1F-B407-AC5B499657B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECC530A8-B6F1-4B1F-B407-AC5B499657B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
