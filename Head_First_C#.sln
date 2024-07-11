@@ -74,7 +74,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08_BaseballPlayers", "08_Ba
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08_LumberjacksAndFlapjacks", "08_LumberjacksAndFlapjacks\08_LumberjacksAndFlapjacks.csproj", "{ECC530A8-B6F1-4B1F-B407-AC5B499657B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_TwoDeck", "08_TwoDeck\08_TwoDeck.csproj", "{D852365E-BE2D-41E1-8D1E-0BB6E4D0D3F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08_TwoDeck", "08_TwoDeck\08_TwoDeck.csproj", "{D852365E-BE2D-41E1-8D1E-0BB6E4D0D3F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_LinqTest", "09_LinqTest\09_LinqTest.csproj", "{64317420-8ECA-4D19-9BBE-72DA8D8A210B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_JimmyLinq", "09_JimmyLinq\09_JimmyLinq.csproj", "{5D9FB841-6F32-45EB-8BE2-510B96CE5DAF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -218,6 +222,14 @@ Global
 		{D852365E-BE2D-41E1-8D1E-0BB6E4D0D3F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D852365E-BE2D-41E1-8D1E-0BB6E4D0D3F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D852365E-BE2D-41E1-8D1E-0BB6E4D0D3F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64317420-8ECA-4D19-9BBE-72DA8D8A210B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64317420-8ECA-4D19-9BBE-72DA8D8A210B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64317420-8ECA-4D19-9BBE-72DA8D8A210B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64317420-8ECA-4D19-9BBE-72DA8D8A210B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D9FB841-6F32-45EB-8BE2-510B96CE5DAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D9FB841-6F32-45EB-8BE2-510B96CE5DAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D9FB841-6F32-45EB-8BE2-510B96CE5DAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D9FB841-6F32-45EB-8BE2-510B96CE5DAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
