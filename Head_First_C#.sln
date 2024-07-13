@@ -80,7 +80,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09_LinqTest", "09_LinqTest\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09_JimmyLinq", "09_JimmyLinq\09_JimmyLinq.csproj", "{5D9FB841-6F32-45EB-8BE2-510B96CE5DAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_DeferredEvaluation", "09_DeferredEvaluation\09_DeferredEvaluation.csproj", "{F5E13A50-D96D-4808-8865-1E48A4AE6524}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09_DeferredEvaluation", "09_DeferredEvaluation\09_DeferredEvaluation.csproj", "{F5E13A50-D96D-4808-8865-1E48A4AE6524}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_CardGroupQuery", "09_CardGroupQuery\09_CardGroupQuery.csproj", "{9D715596-C9E5-4BBC-9C61-5C98B75BA69C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -236,6 +238,10 @@ Global
 		{F5E13A50-D96D-4808-8865-1E48A4AE6524}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5E13A50-D96D-4808-8865-1E48A4AE6524}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5E13A50-D96D-4808-8865-1E48A4AE6524}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D715596-C9E5-4BBC-9C61-5C98B75BA69C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D715596-C9E5-4BBC-9C61-5C98B75BA69C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D715596-C9E5-4BBC-9C61-5C98B75BA69C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D715596-C9E5-4BBC-9C61-5C98B75BA69C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
