@@ -4,7 +4,7 @@ using System.Text;
 
 namespace _09_JimmyLinqRefactored
 {
-    enum Critics
+    public enum Critics
     {
         MuddyCritic,
         RottenTornadoes,

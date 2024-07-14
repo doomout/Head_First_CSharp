@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace _09_JimmyLinqRefactored
 {
-    internal static class ComicAnalyzer
+    public static class ComicAnalyzer
     {
         private static PriceRange CalulatePriceRange(Comic comic)
         {

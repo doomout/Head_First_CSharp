@@ -4,7 +4,7 @@ using System.Text;
 
 namespace _09_JimmyLinqRefactored
 {
-    internal class Comic
+    public class Comic
     {
         public string Name { get; set; }
         public int Issue { get; set; }
