@@ -7,9 +7,9 @@ namespace _09_JimmyLinqRefactored
 {
     public static class ComicAnalyzer
     {
-        private static PriceRange CalulatePriceRange(Comic comic)
+        private static PriceRange CalulatePriceRange(Comic comic, IReadOnlyDictionary<int, decimal> prices)
         {
-            if (Comic.Prices[comic.Issue] <= 100)
+            if (prices[comic.Issue] < 100)
                 return PriceRange.Cheap;
             else
                 return PriceRange.Expensive;
@@ -19,7 +19,7 @@ namespace _09_JimmyLinqRefactored
             IEnumerable<IGrouping<PriceRange, Comic>> grouped = 
                 from comic in comics
                 orderby prices[comic.Issue]
-                group comic by CalulatePriceRange(comic) into priceGroup
+                group comic by CalulatePriceRange(comic, prices) into priceGroup
                 select priceGroup;
             
             return grouped;
