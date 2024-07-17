@@ -56,12 +56,35 @@ namespace _09_JimmyLinqUnitTests
                 "RottenTornadoes rated #2 'Issue 2' 95.11",
             };
             var actualResults = ComicAnalyzer.GetReviews(testComics, testReviews).ToList();
+            //리스트 끼리 비교
+            CollectionAssert.AreEqual(expectedResults, actualResults);
+        }
 
-            // 예상 결과와 실제 결과를 출력합니다.
-            for (int i = 0; i < expectedResults.Length; i++)
+        //이상한 데이터 테스트 하기
+        [TestMethod]
+        public void ComicAnalyzer_Should_Handle_Weird_Review_Scores()
+        {
+            var testReviews = new[]
             {
-                Console.WriteLine($"Expected: {expectedResults[i]}, Actual: {actualResults[i]}");
-            }
+                new Review() { Issue = 1, Critic = Critics.MuddyCritic, Score = -12.1212 }, //음수
+                new Review() { Issue = 1, Critic = Critics.RottenTornadoes, Score = 391691234.48931 },  //큰 수
+                new Review() { Issue = 2, Critic = Critics.RottenTornadoes, Score = 0 },
+                new Review() { Issue = 2, Critic = Critics.MuddyCritic, Score = 40.3 }, //같은 수
+                new Review() { Issue = 2, Critic = Critics.MuddyCritic, Score = 40.3 }, //같은 수
+                new Review() { Issue = 2, Critic = Critics.MuddyCritic, Score = 40.3 }, //같은 수
+                new Review() { Issue = 2, Critic = Critics.MuddyCritic, Score = 40.3 }, //같은 수
+            };
+            var expectedResults = new[]
+            {
+                "MuddyCritic rated #1 'Issue 1' -12.12",
+                "RottenTornadoes rated #1 'Issue 1' 391691234.49",
+                "RottenTornadoes rated #2 'Issue 2' 0.00",
+                "MuddyCritic rated #2 'Issue 2' 40.30",
+                "MuddyCritic rated #2 'Issue 2' 40.30",
+                "MuddyCritic rated #2 'Issue 2' 40.30",
+                "MuddyCritic rated #2 'Issue 2' 40.30",
+            };
+            var actualResults = ComicAnalyzer.GetReviews(testComics, testReviews).ToList();
             //리스트 끼리 비교
             CollectionAssert.AreEqual(expectedResults, actualResults);
         }
