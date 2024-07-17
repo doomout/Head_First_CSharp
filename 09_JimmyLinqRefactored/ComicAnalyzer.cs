@@ -31,7 +31,7 @@ namespace _09_JimmyLinqRefactored
                 from comic in comics
                 orderby comic.Issue
                 join review in reviews on comic.Issue equals review.Issue
-                select $"{review.Critic} rated #{comic.Issue} '{comic.Name}' {review.score: 0.00}";
+                select $"{review.Critic} rated #{comic.Issue} '{comic.Name}' {review.Score:F2}"; //F2는 소수점 2자리까지 표시하라는 뜻
 
             return joined;  
         }

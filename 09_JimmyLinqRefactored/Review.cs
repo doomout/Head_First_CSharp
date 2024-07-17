@@ -8,6 +8,6 @@ namespace _09_JimmyLinqRefactored
     {
         public int Issue {  get; set; }
         public Critics Critic { get; set; }
-        public double score {  get; set; }
+        public double Score {  get; set; }
     }
 }
