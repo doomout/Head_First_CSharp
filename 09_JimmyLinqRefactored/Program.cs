@@ -10,7 +10,9 @@ namespace _09_JimmyLinqRefactored
             while (!done)
             {
                 Console.WriteLine("\nPress G to group comics by price, R to get reviews, any other key to quit\n");
-                switch ((Console.ReadKey(true).KeyChar.ToString().ToUpper()))
+
+                /**기존 switch 문
+                switch (Console.ReadKey(true).KeyChar.ToString().ToUpper())
                 {
                     case "G":
                         done = GroupComicsByPrice();
@@ -22,6 +24,14 @@ namespace _09_JimmyLinqRefactored
                         done= true;
                         break;
                 }
+                */
+                //람다식 switch 문으로 변환
+                done = Console.ReadKey(true).KeyChar.ToString().ToUpper() switch
+                { 
+                    "G" => GroupComicsByPrice(),
+                    "R" => GetReviews(),
+                    _ => true,
+                };
             }
         }
         private static bool GroupComicsByPrice()
