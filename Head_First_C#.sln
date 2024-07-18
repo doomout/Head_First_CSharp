@@ -88,11 +88,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09_JimmyLinqRefactored", "0
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09_JimmyLinqUnitTests", "09_JimmyLinqUnitTests\09_JimmyLinqUnitTests.csproj", "{0BC077AD-7121-4EBA-B012-F7EE13106BAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_LambdaTestDrive", "09_LambdaTestDrive\09_LambdaTestDrive.csproj", "{07507E8D-1C97-4732-892F-FFC1EB5D59B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09_LambdaTestDrive", "09_LambdaTestDrive\09_LambdaTestDrive.csproj", "{07507E8D-1C97-4732-892F-FFC1EB5D59B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_ClownWithLambdas", "09_ClownWithLambdas\09_ClownWithLambdas.csproj", "{FFD3DC6E-88D6-46AA-8611-8680736B27CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09_ClownWithLambdas", "09_ClownWithLambdas\09_ClownWithLambdas.csproj", "{FFD3DC6E-88D6-46AA-8611-8680736B27CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_SharpenYourPencil", "09_SharpenYourPencil\09_SharpenYourPencil.csproj", "{D83812B3-11E3-4D39-AB66-A579276FFD21}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09_SharpenYourPencil", "09_SharpenYourPencil\09_SharpenYourPencil.csproj", "{D83812B3-11E3-4D39-AB66-A579276FFD21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_CreateSequencesByHand", "09_CreateSequencesByHand\09_CreateSequencesByHand.csproj", "{BC2AE443-2AE0-412D-A922-D67CAF42C989}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -272,6 +274,10 @@ Global
 		{D83812B3-11E3-4D39-AB66-A579276FFD21}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D83812B3-11E3-4D39-AB66-A579276FFD21}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D83812B3-11E3-4D39-AB66-A579276FFD21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC2AE443-2AE0-412D-A922-D67CAF42C989}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC2AE443-2AE0-412D-A922-D67CAF42C989}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC2AE443-2AE0-412D-A922-D67CAF42C989}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC2AE443-2AE0-412D-A922-D67CAF42C989}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
