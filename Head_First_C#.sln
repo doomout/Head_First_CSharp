@@ -94,7 +94,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09_ClownWithLambdas", "09_C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09_SharpenYourPencil", "09_SharpenYourPencil\09_SharpenYourPencil.csproj", "{D83812B3-11E3-4D39-AB66-A579276FFD21}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_CreateSequencesByHand", "09_CreateSequencesByHand\09_CreateSequencesByHand.csproj", "{BC2AE443-2AE0-412D-A922-D67CAF42C989}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09_CreateSequencesByHand", "09_CreateSequencesByHand\09_CreateSequencesByHand.csproj", "{BC2AE443-2AE0-412D-A922-D67CAF42C989}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_UseYieldReturn", "09_UseYieldReturn\09_UseYieldReturn.csproj", "{ED72F648-7767-4C4B-ACBA-DAF4995F8DBC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -278,6 +280,10 @@ Global
 		{BC2AE443-2AE0-412D-A922-D67CAF42C989}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC2AE443-2AE0-412D-A922-D67CAF42C989}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC2AE443-2AE0-412D-A922-D67CAF42C989}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED72F648-7767-4C4B-ACBA-DAF4995F8DBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED72F648-7767-4C4B-ACBA-DAF4995F8DBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED72F648-7767-4C4B-ACBA-DAF4995F8DBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED72F648-7767-4C4B-ACBA-DAF4995F8DBC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
