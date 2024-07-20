@@ -96,11 +96,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09_SharpenYourPencil", "09_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09_CreateSequencesByHand", "09_CreateSequencesByHand\09_CreateSequencesByHand.csproj", "{BC2AE443-2AE0-412D-A922-D67CAF42C989}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_UseYieldReturn", "09_UseYieldReturn\09_UseYieldReturn.csproj", "{ED72F648-7767-4C4B-ACBA-DAF4995F8DBC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09_UseYieldReturn", "09_UseYieldReturn\09_UseYieldReturn.csproj", "{ED72F648-7767-4C4B-ACBA-DAF4995F8DBC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_BetterSportSequence", "09_BetterSportSequence\09_BetterSportSequence.csproj", "{D5DC9C18-59A6-4287-97CF-702964BD6110}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09_BetterSportSequence", "09_BetterSportSequence\09_BetterSportSequence.csproj", "{D5DC9C18-59A6-4287-97CF-702964BD6110}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_PowersOfTwo", "09_PowersOfTwo\09_PowersOfTwo.csproj", "{4A8CED68-19FA-487D-8322-0A76D8CD9439}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09_PowersOfTwo", "09_PowersOfTwo\09_PowersOfTwo.csproj", "{4A8CED68-19FA-487D-8322-0A76D8CD9439}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10_SwindlerDiabolicalPlan", "10_SwindlerDiabolicalPlan\10_SwindlerDiabolicalPlan.csproj", "{40A522FE-6C98-4FDB-9E02-3116A2D6941B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -296,6 +298,10 @@ Global
 		{4A8CED68-19FA-487D-8322-0A76D8CD9439}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A8CED68-19FA-487D-8322-0A76D8CD9439}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A8CED68-19FA-487D-8322-0A76D8CD9439}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40A522FE-6C98-4FDB-9E02-3116A2D6941B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40A522FE-6C98-4FDB-9E02-3116A2D6941B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40A522FE-6C98-4FDB-9E02-3116A2D6941B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40A522FE-6C98-4FDB-9E02-3116A2D6941B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
