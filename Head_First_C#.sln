@@ -112,9 +112,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10_UseAMemoryStream", "10_U
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10_WriteADeck", "10_WriteADeck\10_WriteADeck.csproj", "{824F2B10-0624-43C9-8503-203370EE65AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10_SerializeGuys", "10_SerializeGuys\10_SerializeGuys.csproj", "{D0EB9AAD-C7D3-4658-A1DF-BA86BD011865}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10_SerializeGuys", "10_SerializeGuys\10_SerializeGuys.csproj", "{D0EB9AAD-C7D3-4658-A1DF-BA86BD011865}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10_UseABinaryWriter", "10_UseABinaryWriter\10_UseABinaryWriter.csproj", "{17EEC24A-7D00-49B5-A410-3257E67FF742}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10_UseABinaryWriter", "10_UseABinaryWriter\10_UseABinaryWriter.csproj", "{17EEC24A-7D00-49B5-A410-3257E67FF742}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10_HexDump", "10_HexDump\10_HexDump.csproj", "{F035B091-6E63-469F-AC7E-A1EC26F89B96}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -338,6 +340,10 @@ Global
 		{17EEC24A-7D00-49B5-A410-3257E67FF742}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17EEC24A-7D00-49B5-A410-3257E67FF742}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17EEC24A-7D00-49B5-A410-3257E67FF742}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F035B091-6E63-469F-AC7E-A1EC26F89B96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F035B091-6E63-469F-AC7E-A1EC26F89B96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F035B091-6E63-469F-AC7E-A1EC26F89B96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F035B091-6E63-469F-AC7E-A1EC26F89B96}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
