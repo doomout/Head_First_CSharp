@@ -118,7 +118,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10_UseABinaryWriter", "10_U
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10_HexDump", "10_HexDump\10_HexDump.csproj", "{F035B091-6E63-469F-AC7E-A1EC26F89B96}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11_EvilClone", "11_EvilClone\11_EvilClone.csproj", "{2261F505-EE81-44F3-9856-57F4CE5F9589}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11_EvilClone", "11_EvilClone\11_EvilClone.csproj", "{2261F505-EE81-44F3-9856-57F4CE5F9589}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11_StructDog", "11_StructDog\11_StructDog.csproj", "{1D5A0528-AEF8-4C0C-9CB2-449053248921}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -350,6 +352,10 @@ Global
 		{2261F505-EE81-44F3-9856-57F4CE5F9589}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2261F505-EE81-44F3-9856-57F4CE5F9589}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2261F505-EE81-44F3-9856-57F4CE5F9589}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D5A0528-AEF8-4C0C-9CB2-449053248921}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D5A0528-AEF8-4C0C-9CB2-449053248921}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D5A0528-AEF8-4C0C-9CB2-449053248921}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D5A0528-AEF8-4C0C-9CB2-449053248921}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
