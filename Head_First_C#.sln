@@ -126,6 +126,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11_ReturnThreeValues", "11_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11_PassGuyByReference", "11_PassGuyByReference\11_PassGuyByReference.csproj", "{D1D48479-222A-47D8-AAA6-C44C58A6BB42}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11_CheckTemperature", "11_CheckTemperature\11_CheckTemperature.csproj", "{90090B30-33F3-4B64-9F90-42ABADC0AE0E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -368,6 +370,10 @@ Global
 		{D1D48479-222A-47D8-AAA6-C44C58A6BB42}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1D48479-222A-47D8-AAA6-C44C58A6BB42}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1D48479-222A-47D8-AAA6-C44C58A6BB42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90090B30-33F3-4B64-9F90-42ABADC0AE0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90090B30-33F3-4B64-9F90-42ABADC0AE0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90090B30-33F3-4B64-9F90-42ABADC0AE0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90090B30-33F3-4B64-9F90-42ABADC0AE0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
