@@ -124,6 +124,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11_StructDog", "11_StructDo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11_ReturnThreeValues", "11_ReturnThreeValues\11_ReturnThreeValues.csproj", "{B196D9F0-9943-449A-95D6-7238FBD702DB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11_PassGuyByReference", "11_PassGuyByReference\11_PassGuyByReference.csproj", "{D1D48479-222A-47D8-AAA6-C44C58A6BB42}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -362,6 +364,10 @@ Global
 		{B196D9F0-9943-449A-95D6-7238FBD702DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B196D9F0-9943-449A-95D6-7238FBD702DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B196D9F0-9943-449A-95D6-7238FBD702DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1D48479-222A-47D8-AAA6-C44C58A6BB42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1D48479-222A-47D8-AAA6-C44C58A6BB42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1D48479-222A-47D8-AAA6-C44C58A6BB42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1D48479-222A-47D8-AAA6-C44C58A6BB42}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
