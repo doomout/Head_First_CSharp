@@ -120,7 +120,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10_HexDump", "10_HexDump\10
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11_EvilClone", "11_EvilClone\11_EvilClone.csproj", "{2261F505-EE81-44F3-9856-57F4CE5F9589}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11_StructDog", "11_StructDog\11_StructDog.csproj", "{1D5A0528-AEF8-4C0C-9CB2-449053248921}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11_StructDog", "11_StructDog\11_StructDog.csproj", "{1D5A0528-AEF8-4C0C-9CB2-449053248921}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11_ReturnThreeValues", "11_ReturnThreeValues\11_ReturnThreeValues.csproj", "{B196D9F0-9943-449A-95D6-7238FBD702DB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -356,6 +358,10 @@ Global
 		{1D5A0528-AEF8-4C0C-9CB2-449053248921}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D5A0528-AEF8-4C0C-9CB2-449053248921}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D5A0528-AEF8-4C0C-9CB2-449053248921}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B196D9F0-9943-449A-95D6-7238FBD702DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B196D9F0-9943-449A-95D6-7238FBD702DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B196D9F0-9943-449A-95D6-7238FBD702DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B196D9F0-9943-449A-95D6-7238FBD702DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
