@@ -130,7 +130,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11_CheckTemperature", "11_C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11_NullReference", "11_NullReference\11_NullReference.csproj", "{87BB774C-89C1-40E5-BD45-13FF8B5AD83B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11_PoolPuzzle", "11_PoolPuzzle\11_PoolPuzzle.csproj", "{C6DDA718-6400-4A55-96B4-270473B422E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11_PoolPuzzle", "11_PoolPuzzle\11_PoolPuzzle.csproj", "{C6DDA718-6400-4A55-96B4-270473B422E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12_UseAFinallyBlock", "12_UseAFinallyBlock\12_UseAFinallyBlock.csproj", "{3DC1F811-C787-4708-92B1-EADBE8616337}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -386,6 +388,10 @@ Global
 		{C6DDA718-6400-4A55-96B4-270473B422E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6DDA718-6400-4A55-96B4-270473B422E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6DDA718-6400-4A55-96B4-270473B422E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DC1F811-C787-4708-92B1-EADBE8616337}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DC1F811-C787-4708-92B1-EADBE8616337}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DC1F811-C787-4708-92B1-EADBE8616337}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DC1F811-C787-4708-92B1-EADBE8616337}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
