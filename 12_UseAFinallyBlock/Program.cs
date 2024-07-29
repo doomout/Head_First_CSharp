@@ -11,11 +11,19 @@ namespace _12_UseAFinallyBlock
             try
             {
                 var lines = File.ReadAllLines(args[0]);
-                firstLine = (lines.Length > 0) ? lines[0] : "The file was empty"; 
+                firstLine = (lines.Length > 0) ? lines[0] : "The file was empty";
             }
-            catch (Exception ex)
+            catch (IndexOutOfRangeException)
             {
-                Console.Error.WriteLine("Could not read lines from the file: {0}", ex);
+                Console.Error.WriteLine("Please specify a filename.");
+            }
+            catch (FileNotFoundException)
+            {
+                Console.Error.WriteLine("Unable to find file: {0}", args[0]);
+            }
+            catch (UnauthorizedAccessException ex)
+            {
+                Console.Error.WriteLine("File {0} could not be accessed: {1}", args[0], ex.Message);
             }
             finally
             {
@@ -25,7 +33,6 @@ namespace _12_UseAFinallyBlock
     }
 }
 /** 실행결과
-Could not read lines from the file: System.IndexOutOfRangeException: Index was outside the bounds of the array.
-at _12_UseAFinallyBlock.Program.Main(String[] args) in 파일 위치
+Please specify a filename.
 No first line was read
  */
