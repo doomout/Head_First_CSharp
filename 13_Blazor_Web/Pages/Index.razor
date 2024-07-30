@@ -14,10 +14,10 @@
 </style>
 <div class="container">
     <div class="row">
-        @foreach (var animal in animalEmoji)
+        @foreach (var animal in shuffledAnimals)
         {
             <div class="col-3">
-                <button type="button" class="">
+                <button @onclick="@(() => ButtonClick(animal))">
                     <h1>@animal</h1>
                 </button>
             </div>
@@ -38,4 +38,40 @@
         "😛", "😛",
     };
 
-}
+    List<string> shuffledAnimals = new List<string>();
+    protected override void OnInitialized()
+    {
+        SetUpGame();
+    }
+    private void SetUpGame()
+    {
+        Random random = new Random();
+        shuffledAnimals = animalEmoji
+                                .OrderBy(Item => random.Next())
+                                .ToList();
+    }
+
+    string lastAniamlFound = string.Empty;
+    private void ButtonClick(string animal)
+    {
+        if (lastAniamlFound == string.Empty) 
+        {
+            //짝을 맞출 첫 번째 동물을 저장
+            lastAniamlFound = animal;
+        }
+        else if(lastAniamlFound == animal) //첫번째 동물과 두번째 동물이 일치하면
+        {
+            //일치하면 다음 짝을 위해 초기화
+            lastAniamlFound = string.Empty;
+            //찾은 동물은 공백 문자로 대체
+            shuffledAnimals = shuffledAnimals
+                                    .Select(a => a.Replace(animal, string.Empty))
+                                    .ToList();
+        }
+        else //일치하지 않으면...
+        {
+            //선택을 초기화 한다.
+            lastAniamlFound = string.Empty;
+        }
+    }
+};
