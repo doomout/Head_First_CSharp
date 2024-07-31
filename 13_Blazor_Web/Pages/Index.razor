@@ -25,6 +25,9 @@
             </div>
         }
     </div>
+    <div class="container">
+        <h2>Matches found: @matchesFound</h2> <!--맞춘 짝의 갯수 표시-->
+    </div>
 </div>
 @code
 {
@@ -41,6 +44,7 @@
     };
 
     List<string> shuffledAnimals = new List<string>();
+    int matchesFound = 0; //맞춘 짝의 숫자 넣을 변수
     protected override void OnInitialized()
     {
         SetUpGame();
@@ -51,6 +55,7 @@
         shuffledAnimals = animalEmoji
                                 .OrderBy(Item => random.Next())
                                 .ToList();
+        matchesFound = 0; //맞춘 짝의 갯수 0으로 초기화
     }
 
     string lastAniamlFound = string.Empty;
@@ -71,6 +76,11 @@
             shuffledAnimals = shuffledAnimals
                                     .Select(a => a.Replace(animal, string.Empty))
                                     .ToList();
+            matchesFound++; //맞출 때 마다 1씩 추가
+            if (matchesFound == 8) //다 맞추면...
+            {
+                SetUpGame(); //초기화
+            }
         }
         else //일치하지 않으면...
         {
