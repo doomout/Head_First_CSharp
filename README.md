@@ -16,4 +16,4 @@ IDE : Microsoft Visual Studio Community 2022
 ![1](https://github.com/doomout/Head_First_CSharp/assets/13861731/2d0dd44d-4023-4ff1-959d-7f7756bf11ba)
 
 ### 5. 이모지 매칭 게임 웹 버전(Blazor WebAssembly)
-![Cap 2024-07-30 14-50-40-752](https://github.com/user-attachments/assets/85ab5f0a-4a69-4f9e-a7db-87d3a19c5132)
+![Cap 2024-07-31 12-57-15-104](https://github.com/user-attachments/assets/cc20b69e-6a54-4080-9794-3542653635da)
