@@ -1,0 +1,70 @@
+﻿@page "/"
+
+<div class="container"> 
+    <div class="row">
+        <h1>웹 컨트롤러 예제</h1>
+    </div>
+    <div class="row mt-2">
+        <div class="col-sm-6">
+            Enter text: 
+        </div>
+        <div class="col-sm-6">
+            <input type="text" placeholder="Enter text" @onchange="UpdateNumbericValue"/><!--숫자만 입력하도록 제한-->
+        </div>
+    </div>
+    <div class="row mt-2"> <!--행의 상단에 공백이 2칸 추가-->
+        <div class="col-sm-6">
+            Pick a number:
+        </div>
+        <div class="col-sm-6">
+            <input type="range" @onchange="UpdateValue" /> <!--@onchange 사용해 컨트롤러를 이벤트 처리기에 연결-->
+        </div>
+    </div>
+    <div class="row mt-2">
+        <div class="col-sm-6">Click a button:</div>
+        <div class="col-sm-6 btn-group" role="group">
+            <!--버튼 6개를 만들고 클릭하면 눌린 버튼 값 표시-->
+            @for(var buttonNumber=1; buttonNumber <= 6; buttonNumber++)
+            {
+                string valueToDisplay = $"Button #{buttonNumber}";
+                <button type="button" class="btn btn-secondary" @onclick="() => ButtonClick(valueToDisplay)">
+                    @buttonNumber
+                </button>
+            }
+        </div>
+    </div>
+    <div class="row mt-2">
+        <div class="col-sm-6">Pick a date:</div>
+        <div class="col-sm-6">
+            <input type="date" @onchange="UpdateValue"/> <!--달력 선택기-->
+        </div>
+    </div>
+    <div class="row mt-2">
+        <div class="col-sm-6">Pick a color:</div>
+        <div class="col-sm-6">
+            <input type="color" @onchange="UpdateValue"/> <!--색상 선택기-->
+        </div>
+    </div>
+    <div class="row mt-5">
+        <h2>
+            Here's the value: <strong>@DisplayValue</strong> <!--DisplayValue 가 변경되면, 페이지에 표시된 값도 함께 변경-->
+        </h2>
+    </div>
+</div>
+@code
+{
+    private string DisplayValue = "";
+    private void UpdateValue(ChangeEventArgs e)
+    {
+        DisplayValue = e.Value.ToString();
+    }
+    private void UpdateNumbericValue(ChangeEventArgs e)
+    {
+        if (int.TryParse(e.Value.ToString(), out int result))
+        {
+            DisplayValue = e.Value.ToString();
+        }
+    }
+    //버튼 클릭하면 DisplayValue 에 값 표시
+    private void ButtonClick(string displayValue) => DisplayValue = displayValue; 
+}
