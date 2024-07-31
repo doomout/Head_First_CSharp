@@ -1,4 +1,5 @@
 ﻿@page "/"
+@using System.Timers
 
 <PageTitle>Index</PageTitle>
 
@@ -28,6 +29,9 @@
     <div class="container">
         <h2>Matches found: @matchesFound</h2> <!--맞춘 짝의 갯수 표시-->
     </div>
+    <div>
+        <h2>Time: @timeDisplay</h2>
+    </div>
 </div>
 @code
 {
@@ -45,8 +49,14 @@
 
     List<string> shuffledAnimals = new List<string>();
     int matchesFound = 0; //맞춘 짝의 숫자 넣을 변수
+    Timer timer;
+    int tenthsOfSecondsElapsed = 0;
+    string timeDisplay;
+
     protected override void OnInitialized()
     {
+        timer = new Timer(100);
+        timer.Elapsed += Timer_Tick;
         SetUpGame();
     }
     private void SetUpGame()
@@ -56,6 +66,7 @@
                                 .OrderBy(Item => random.Next())
                                 .ToList();
         matchesFound = 0; //맞춘 짝의 갯수 0으로 초기화
+        tenthsOfSecondsElapsed = 0;
     }
 
     string lastAniamlFound = string.Empty;
@@ -67,6 +78,8 @@
             //짝을 맞출 첫 번째 동물을 저장
             lastAniamlFound = animal;
             lastDescription = animalDescription;
+
+            timer.Start();
         }
         else if((lastAniamlFound == animal) && (animalDescription != lastDescription)) //첫번째 동물과 두번째 동물이 일치하면
         {
@@ -79,6 +92,8 @@
             matchesFound++; //맞출 때 마다 1씩 추가
             if (matchesFound == 8) //다 맞추면...
             {
+                timer.Stop();
+                timeDisplay += "-Play Agian?";
                 SetUpGame(); //초기화
             }
         }
@@ -87,5 +102,15 @@
             //선택을 초기화 한다.
             lastAniamlFound = string.Empty;
         }
+    }
+
+    private void Timer_Tick(object source, ElapsedEventArgs e)
+    {
+        InvokeAsync(() =>
+        {
+            tenthsOfSecondsElapsed++;
+            timeDisplay = (tenthsOfSecondsElapsed / 10F).ToString("0.0s");
+            StateHasChanged();
+        });
     }
 };
