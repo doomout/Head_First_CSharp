@@ -140,7 +140,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "12_MyException", "12_MyExce
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "13_Blazor_Web", "13_Blazor_Web\13_Blazor_Web.csproj", "{555DF511-4627-4EB6-B368-6D7B68CDD96B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13_ControlsBlazor", "13_ControlsBlazor\13_ControlsBlazor.csproj", "{140F46A6-3101-451C-BE71-9B3CA3876767}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "13_ControlsBlazor", "13_ControlsBlazor\13_ControlsBlazor.csproj", "{140F46A6-3101-451C-BE71-9B3CA3876767}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13_PickACardBlazor", "13_PickACardBlazor\13_PickACardBlazor.csproj", "{9EA92F0D-836D-42A8-B081-DDA5B43FF56E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -416,6 +418,10 @@ Global
 		{140F46A6-3101-451C-BE71-9B3CA3876767}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{140F46A6-3101-451C-BE71-9B3CA3876767}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{140F46A6-3101-451C-BE71-9B3CA3876767}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EA92F0D-836D-42A8-B081-DDA5B43FF56E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EA92F0D-836D-42A8-B081-DDA5B43FF56E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EA92F0D-836D-42A8-B081-DDA5B43FF56E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EA92F0D-836D-42A8-B081-DDA5B43FF56E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
