@@ -142,7 +142,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "13_Blazor_Web", "13_Blazor_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "13_ControlsBlazor", "13_ControlsBlazor\13_ControlsBlazor.csproj", "{140F46A6-3101-451C-BE71-9B3CA3876767}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13_PickACardBlazor", "13_PickACardBlazor\13_PickACardBlazor.csproj", "{9EA92F0D-836D-42A8-B081-DDA5B43FF56E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "13_PickACardBlazor", "13_PickACardBlazor\13_PickACardBlazor.csproj", "{9EA92F0D-836D-42A8-B081-DDA5B43FF56E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13_MenuItem", "13_MenuItem\13_MenuItem.csproj", "{FC986607-D060-47E7-89CD-34E8D503EC95}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -422,6 +424,10 @@ Global
 		{9EA92F0D-836D-42A8-B081-DDA5B43FF56E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EA92F0D-836D-42A8-B081-DDA5B43FF56E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EA92F0D-836D-42A8-B081-DDA5B43FF56E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC986607-D060-47E7-89CD-34E8D503EC95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC986607-D060-47E7-89CD-34E8D503EC95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC986607-D060-47E7-89CD-34E8D503EC95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC986607-D060-47E7-89CD-34E8D503EC95}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
